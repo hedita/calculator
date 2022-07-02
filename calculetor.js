@@ -6,13 +6,12 @@ let remove = document.getElementById("remove");
 let screenText = "";
 
 for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function(){
+  buttons[i].addEventListener("click", function()  {
     let value = buttons[i].innerHTML;
     screenText += value;
     screen.innerHTML = screenText;
   })
 }
-
 equals.addEventListener("click", function() {
   let numbers = screenText.split(/\+|\−|\=|\÷|\×/g);
 
@@ -44,7 +43,8 @@ reset.addEventListener("click", function() {
   screenText = "";
 })
 
-// remove.addEventListener("click", function() {
-//   let remove = screenText.substring(0, screenText.length - 1);
-//   console.log("screenText");
-// })
+remove.addEventListener("click", function() {
+  let remove = screenText.substring(0, screenText.length - 1);
+  screen.innerHTML = remove;
+  screenText = remove;
+})  
