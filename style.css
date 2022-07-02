@@ -78,3 +78,14 @@ body {
 .calc-button:last-child:active {
   background-color: #bbbcbe;
 }
+
+.calc-button-remove {
+  background-color: #d8d9db;
+  color: black;
+  flex-basis: 24.5%;
+  border: none;
+  font-size: 40px;
+  height: 100px;
+  border-radius: 0;
+  cursor: pointer;
+}
