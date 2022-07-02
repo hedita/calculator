@@ -43,8 +43,15 @@ reset.addEventListener("click", function() {
   screenText = "";
 })
 
+<<<<<<< HEAD:calculetor.js
 remove.addEventListener("click", function() {
   let remove = screenText.substring(0, screenText.length - 1);
   screen.innerHTML = remove;
   screenText = remove;
 })  
+=======
+// remove.addEventListener("click", function() {
+//   let remove = screenText.substring(0, screenText.length - 1);
+//   console.log("screenText");
+// })
+>>>>>>> 6fbe6a2e5dd086d8ae39ab4d8f9c344739342b22:calculator.js
